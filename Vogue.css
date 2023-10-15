@@ -1,0 +1,241 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color:rgba(245, 245, 245, 0.443)
+}
+#first-container
+{
+    background-color: rgba(245, 245, 245, 0.443);
+    position: sticky;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    height: min-content;
+}
+#title
+{
+    font-family:Fuggles;
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center !important; 
+    
+}
+#navbar-text li a
+{
+    font-family: Rajdhani;
+    color: black;
+    font-weight: 800;
+}
+#navbar-text li a:hover
+{
+    color: rgba(146, 137, 88, 0.514);
+}
+/*dropdown*/
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  
+  .dropdown-menu
+  {
+  
+        border-radius: 0;
+        border-start-end-radius: 10%;
+        text-indent: 50px; 
+        
+  }
+  .dropdown-menu
+  a:hover
+  {
+    background-color:transparent;
+  }
+  #mashion-drop
+  {
+    width: 300px !important;
+    height: 310px !important;
+    
+  }
+ 
+/* Mashion underline*/
+  #mashion-drop li a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(104, 44, 54);
+    height: 3px;
+    width: 0;
+    left: 18%;
+    display: flex;
+    transition: 0.3s;
+  }
+  #mashion-drop li a:hover::after
+  {
+    width: 33%;
+  }
+  #haute-drop{
+  width: 300px !important;
+  height: 310px !important;
+  }
+  
+/*haute-underline */
+#haute-drop li a::after{
+  content: "";
+  position: absolute;
+  background-color: rgb(104, 44, 54);
+  height: 3px;
+  width: 0;
+  left: 18%;
+  display: flex;
+  transition: 0.3s;
+}
+#haute-drop li a:hover::after
+{
+  width: 33%;
+}
+/*central fashion */
+#central-drop{
+  width: 300px !important;
+  height: 250px !important;
+  }
+  
+
+#central-drop li a::after{
+  content: "";
+  position: absolute;
+  background-color: rgb(104, 44, 54);
+  height: 3px;
+  width: 0;
+  left: 18%;
+  display: flex;
+  transition: 0.3s;
+}
+#central-drop li a:hover::after
+{
+  width: 33%;
+}
+/*diva */
+#diva-drop
+{
+  width: 300px !important;
+  height: 300px !important;
+  }
+  #diva-drop li a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(104, 44, 54);
+    height: 3px;
+    width: 0;
+    left: 18%;
+    display: flex;
+    transition: 0.3s;
+  }
+  #diva-drop li a:hover::after
+  {
+    width: 33%;
+  }
+/*pakistan in ue */
+  #pak-in-vogue-drop
+{
+  width: 300px !important;
+  height: 300px !important;
+  }
+  #pak-in-vogue-drop li a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(104, 44, 54);
+    height: 3px;
+    width: 0;
+    left: 18%;
+    display: flex;
+    transition: 0.3s;
+  }
+  #pak-in-vogue-drop li a:hover::after
+  {
+    width: 33%;
+  }
+  /* */
+  .carousel-item
+{
+  height: 100vh;
+  min-height: 350px;
+  background:no-repeat scroll center scroll;
+  background-size: cover;
+  position: relative;
+}
+.carousel-item::before
+{
+  content:"";
+  display: block;
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+}
+
+.carousel-caption
+{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40%;
+  font-weight: 800;
+  font-size: 90px;
+  font-family:Fuggles;
+  color: rgb(245, 245, 245);
+}
+.carousel-caption:hover
+{
+ mix-blend-mode:exclusion;
+  
+}
+/*new effect js */
+#float
+{
+  width: 98vw;
+  height: 100vh;
+  
+}
+#center
+{
+    width: 60%;
+    height: 60%;
+  /* background-color: rgba(128, 128, 128, 0.598); */
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  
+   
+   }
+  #text
+   {
+    position:relative;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 100px;
+    font-family:Fuggles;
+    overflow: hidden;
+     } 
+.imagediv
+{
+  width: 200px;
+  height: 260px;
+  position: absolute;
+  overflow: hidden;
+}  
+
+.imagediv img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateY(100%);
+
+}
